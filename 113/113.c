@@ -3,14 +3,11 @@
 
 int main()
 {
-	long int n, p;
-    while (scanf("%ld", &n) != EOF)
-    {
-               
-        scanf("%ld", &p);
-    
-        double k = pow(p, 1.0/n);
-        printf("%d\n", (int)k);
-    }
+	double n, p;
+  	double ans;
+  	while (scanf("%lf%lf", &n, &p) != EOF) {
+    	ans = pow(p, 1 / n);
+    	printf("%.0lf\n", ans);
+  	}
     return 0;
 }
