@@ -36,16 +36,29 @@ void test_order(char order[3])
 			total_moves += total - b[i][2];
 		}
 	}
+<<<<<<< HEAD
+=======
+	
+>>>>>>> 902411b (102)
 	if (total_moves < final_maxMoves)
 	{
 		final_maxMoves = total_moves;
 		strcpy(final_order, order);
 	}
+<<<<<<< HEAD
 	else if (total_moves == final_maxMoves)
 	{
 		if (strcmp(final_order, order) > 0)
 			strcpy(final_order, order);
 	}
+=======
+	if (total_moves == final_maxMoves)
+	{
+		if(strcmp(final_order, order) == 1)
+			strcpy(final_order, order);
+	}	
+	/*printf("%s %d\n", order, total_moves);*/
+>>>>>>> 902411b (102)
 }
 
 void swap(char *x, char *y)
